@@ -1,40 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const SocialIcon = [
-    {
-        id:1,
-        url:"fb.svg"
-    },
-    {
-        id:2,
-        url:"fb.svg"
-    },
-    {
-        id:3,
-        url:"fb.svg"
-    },
-    {
-        id:4,
-        url:"fb.svg"
-    },
-    {
-        id:5,
-        url:"fb.svg"
-    },
-    {
-        id:6,
-        url:"fb.svg"
-    },
-]
+// const SocialIcon = [
+//     {
+//         id:1,
+//         url:"fb.svg"
+//     },
+//     {
+//         id:2,
+//         url:"fb.svg"
+//     },
+//     {
+//         id:3,
+//         url:"fb.svg"
+//     },
+//     {
+//         id:4,
+//         url:"fb.svg"
+//     },
+//     {
+//         id:5,
+//         url:"fb.svg"
+//     },
+//     {
+//         id:6,
+//         url:"fb.svg"
+//     },
+// ]
 
-interface FooterProps {
-    id:number,
-    url:string
+// interface FooterProps {
+//     id:number,
+//     url:string
 
-}
+// }
 
-const Footer:React.FC<FooterProps> = ({id, url})=>{
+const Footer = ()=>{
     return(
         <div className="bg-[#0A0F20] px-[25px] py-[40px] md:p-[100px] flex flex-col items-center" id="contact">
             <div className="flex flex-col md:flex-row justify-between w-full max-w-[1000px] gap-10">
