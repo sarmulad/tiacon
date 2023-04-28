@@ -98,7 +98,7 @@ const CommunityCard: React.FC<CommunityProps> = ({ content }) => {
           <h1 className="font-[400] text-[24px] md:text-[40px] text-start leading-[30px] md:leading-[60px] mb-[64px] md:mb-[100px] ml-[40rem] md:ml-[20rem] max-w-[225px] md:max-w-[549px] ">
             Interact with our buzzing community!
           </h1>
-          <div className="flex flex-col flex-nowrap overflow-x-scroll gap-6 max-w-[1600px] m-auto card-container">
+          <div className="flex flex-col flex-nowrap  gap-6 max-w-[1600px] m-auto card-container">
             <div className="card-item">
               {slide1.map(({ id, content }) => (
                 <CommunityCard key={id} content={content} />
