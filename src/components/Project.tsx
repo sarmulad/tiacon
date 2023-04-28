@@ -42,7 +42,6 @@ const ProjectItem:React.FC<ProjectItemsProp> = ({bgColor, btnColor,  icon, conte
                 <button className={`w-[186px] bg-${btnColor} h-[60px] mt-[56px]   flex text-center justify-center gap-2 rounded-[64px]  text-[#fff] text-[14px] font-[600] leading-[18px] px-[40px] py-[21px] btn-custom-color`} style={{ '--bg-color': btnColor }}>
                     Learn More
                    <Image src="/arrow-right.png" alt="arrow-icon" height={10} width={20}/>
-    
                 </button>
             </div>
         </div>
