@@ -24,7 +24,6 @@ const Tokenomics = ()=>{
               <div className="md:flex items-start justify-between flex-col flex-1">
                     <div className="w-1/1  flex flex-col  py-[20px]">
                     <Image src="/tokengrp.svg" width={400} height={400} alt="Tokenomics" className="w-[100%]"/>
-                        
                     </div>
               </div>
             </div>
