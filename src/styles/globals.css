@@ -5,7 +5,7 @@
 body {
   background-color: #0A0F20;
   color:#fff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .video-wrapper{
   width:100%;
