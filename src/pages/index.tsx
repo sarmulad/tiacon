@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 import FAQSection from '@/components/FAQ';
 import Project from '@/components/Project';
 import Stat from '@/components/Stat';
-import Tokenomics from '@/components/Tokenomics';
+// import Tokenomics from '@/components/Tokenomics';
 import Team from '@/components/Team';
 import Partners from '@/components/Partners';
 import Community from '@/components/Community';
@@ -48,9 +48,9 @@ export default function Home() {
         <div className='w-full'>
           <Stake/>
         </div>
-        <div className="w-full">
+        {/* <div className="w-full">
         <Tokenomics/>
-        </div>
+        </div> */}
         <div className="w-full">
         <Roadmap/>
         </div>
