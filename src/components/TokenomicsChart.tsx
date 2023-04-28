@@ -1,45 +1,46 @@
-// import React from 'react';
-// import { Doughnut } from 'react-chartjs-2';
-// import { Chart, DoughnutController } from 'chart.js/auto';
+// @ts-nocheck
 
-// Chart.register(DoughnutController);
 
-// type TokenomicsProps = {
-//   data: number[];
-//   labels: string[];
-// };
+import React from 'react';
+import { Doughnut } from 'react-chartjs-2';
+import { Chart, DoughnutController } from 'chart.js/auto';
 
-// const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
-//   const chartData = {
-//     labels,
-//     datasets: [
-//       {
-//         data,
-//         backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#8ec46b', '#58304E', '#B3B486','#8ec46b'],
-//         borderWidth: 0,
-//       },
-//     ],
-//   };
+Chart.register(DoughnutController);
 
-// // @ts-ignore
+type TokenomicsProps = {
+  data: number[];
+  labels: string[];
+};
 
-//   const options = {
-//     responsive: true,
-//     maintainAspectRatio: false,
-//     plugins: {
-//       legend: {
-//         display: true,
-//         position: 'bottom',
-//         labels: {
-//           font: {
-//             size: 10,
-//           },
-//         },
-//       },
-//     },
-//   };
+const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
+  const chartData = {
+    labels,
+    datasets: [
+      {
+        data,
+        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#8ec46b', '#58304E', '#B3B486','#8ec46b'],
+        borderWidth: 0,
+      },
+    ],
+  };
 
-//   return <Doughnut data={chartData} options={options} />;
-// };
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: {
+          font: {
+            size: 10,
+          },
+        },
+      },
+    },
+  };
 
-// export default TokenomicsChart;
+  return <Doughnut data={chartData} options={options} />;
+};
+
+export default TokenomicsChart;
