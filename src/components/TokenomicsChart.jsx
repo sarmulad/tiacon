@@ -6,12 +6,12 @@ import { Chart, DoughnutController } from 'chart.js/auto';
 
 Chart.register(DoughnutController);
 
-type TokenomicsProps = {
-  data: number[];
-  labels: string[];
-};
+// type TokenomicsProps = {
+//   data: number[];
+//   labels: string[];
+// };
 
-const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
+const TokenomicsChart = ({ data, labels }) => {
   const chartData = {
     labels,
     datasets: [
@@ -38,7 +38,6 @@ const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
       },
     },
   };
-// @ts-ignore
   return <Doughnut data={chartData} options={options} />;
 };
 
