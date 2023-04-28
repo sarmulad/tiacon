@@ -70,10 +70,12 @@ const MobileNav = () => {
               <Image alt="close" className="inline" src="/close.svg" width={30} height={30} onClick={()=>setMobileNavIsOpen(!mobileNavIsOpen)}/>
             </div>
              <div className="flex flex-col gap-[48px]">
-                <NavItem href="status" label="status" />
-                <NavItem href="/#contact" label="contact us" />
-                <NavItem href="/#about" label="about us" />
-                <NavItem href="/#faq" label="faq" />
+                <NavItem href="/" label="Home" />
+                <NavItem href="/#Features" label="Features" />
+                <NavItem href="/#Whitepaper" label="Whitepaper" />
+                <NavItem href="/#faq" label="Faq" />
+                <NavItem href="/#Contact" label="Contact us" />
+
              </div>
              <div className="mt-[117px]">
               <Link href="/#exchange">
