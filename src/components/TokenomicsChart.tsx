@@ -1,5 +1,6 @@
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
+import { CoreChartOptions, DatasetChartOptions, ElementChartOptions, PluginChartOptions, ScaleChartOptions } from "chart.js";
 import { Chart, DoughnutController } from 'chart.js/auto';
 
 Chart.register(DoughnutController);
@@ -15,16 +16,14 @@ const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
     datasets: [
       {
         data,
-        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#8ec46b', '#58304E', '#B3B486','#CD5F5B'],
+        backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#8ec46b', '#58304E', '#B3B486','#8ec46b'],
         borderWidth: 0,
       },
     ],
   };
 
-  const options = {
+  const options: CoreChartOptions<"doughnut"> & ElementChartOptions<"doughnut"> & PluginChartOptions<"doughnut"> & DatasetChartOptions<"doughnut"> & ScaleChartOptions<"linear"> & DoughnutControllerChartOptions = {
     responsive: true,
-    // height: 500, // set to desired height
-    // width: 800, // set to desired width
     maintainAspectRatio: false,
     plugins: {
       legend: {
@@ -32,11 +31,11 @@ const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
         position: 'bottom',
         labels: {
           font: {
-            size: 10,
-          },
-        },
-      },
-    },
+            size: 14
+          }
+        }
+      }
+    }
   };
 
   return <Doughnut data={chartData} options={options} />;
