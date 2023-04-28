@@ -22,21 +22,22 @@ const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
     ],
   };
 
-  const options: CoreChartOptions<"doughnut"> & ElementChartOptions<"doughnut"> & PluginChartOptions<"doughnut"> & DatasetChartOptions<"doughnut"> & ScaleChartOptions<"linear"> & DoughnutControllerChartOptions = {
+  const options: CoreChartOptions<"doughnut"> & ElementChartOptions<"doughnut"> & PluginChartOptions<"doughnut"> & DatasetChartOptions<"doughnut"> & ScaleChartOptions<"category"> & DoughnutControllerChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
       legend: {
         display: true,
-        position: 'bottom',
+        position: "bottom",
         labels: {
           font: {
-            size: 14
-          }
-        }
-      }
-    }
+            size: 16,
+          },
+        },
+      },
+    },
   };
+  
 
   return <Doughnut data={chartData} options={options} />;
 };
