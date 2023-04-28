@@ -21,7 +21,9 @@ interface ProjectItemsProp {
 
 }
 
-
+type StyleProps = {
+  '--bg-color': string;
+}
 
 
  
@@ -34,7 +36,7 @@ const ProjectItem:React.FC<ProjectItemsProp> = ({bgColor, btnColor,  icon, conte
             backgroundSize: 'cover',
         }}
         className={`h-[auto] w-1/1 border-[1px]  md:w-[505px] p-[10px] md:p-[30px] rounded-[13px]`}>
-            <div className="rounded-13px md:px-30px h-full bg-custom-color" style={{ '--bg-color': bgColor }}>
+            <div className="rounded-13px md:px-30px h-full bg-custom-color" style={{ '--bg-color': bgColor } as React.CSSProperties}>
                 <Image src={`/${icon}`} alt="star-icon" height={40} width={136}/>
                 <p className="text-[14px] md:text-[16px] font-[500] leading-[22px]">{content}</p>
                 <p className="text-[14px] mt-[30px] md:text-[16px] font-[500] leading-[22px]">{SubContent}</p>
