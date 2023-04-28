@@ -1,4 +1,3 @@
-// @ts-nocheck
 
 
 import React from 'react';
@@ -39,7 +38,7 @@ const TokenomicsChart: React.FC<TokenomicsProps> = ({ data, labels }) => {
       },
     },
   };
-
+// @ts-ignore
   return <Doughnut data={chartData} options={options} />;
 };
 
