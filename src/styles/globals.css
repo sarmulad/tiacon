@@ -97,6 +97,10 @@ body {
   transition: transform 0.5s ease;
 
 }
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
 
 @keyframes cambio {
   from {
