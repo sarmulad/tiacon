@@ -13,40 +13,53 @@ import { EffectCoverflow, Pagination, Keyboard, Scrollbar, Navigation, Autoplay,
 
 
 interface ProjectItemsProp {
-    bgColor?:any,
-    content:string,
-    SubContent:string,
-    icon?:string,
-    btnColor?:string,
-
+  bgColor?: string;
+  content: string;
+  SubContent: string;
+  icon?: string;
+  btnColor?: string;
 }
 
+const ProjectItem: React.FC<ProjectItemsProp> = ({
+  bgColor,
+  btnColor,
+  icon,
+  content,
+  SubContent,
+}) => {
+  return (
+    <div
+      style={{
+        background: `url(${frost.src}), linear-gradient(168.07deg, #D9D9D9 6.78%, rgba(150, 144, 213, 0.05) 95.61%)`,
+        backdropFilter: 'blur(29.4304px)',
+        backgroundSize: 'cover',
+      }}
+      className={`h-[auto] w-1/1 border-[1px]  md:w-[505px] p-[10px] md:p-[30px] rounded-[13px]`}
+    >
+      <div
+        className="rounded-13px md:px-30px h-full bg-custom-color"
+        style={{ '--bg-color': bgColor } as React.CSSProperties}
+      >
+        <Image src={`/${icon}`} alt="star-icon" height={40} width={136} />
+        <p className="text-[14px] md:text-[16px] font-[500] leading-[22px]">
+          {content}
+        </p>
+        <p className="text-[14px] mt-[30px] md:text-[16px] font-[500] leading-[22px]">
+          {SubContent}
+        </p>
 
+        <button
+          className={`w-[186px] h-[60px] mt-[56px]   flex text-center justify-center gap-2 rounded-[64px]  text-[#fff] text-[14px] font-[600] leading-[18px] px-[40px] py-[21px] btn-custom-color`}
+          style={{ '--bg-color': btnColor } as React.CSSProperties}
+        >
+          Learn More
+          <Image src="/arrow-right.png" alt="arrow-icon" height={10} width={20} />
+        </button>
+      </div>
+    </div>
+  );
+};
 
-
- 
-const ProjectItem:React.FC<ProjectItemsProp> = ({bgColor, btnColor,  icon, content, SubContent}) => {
-    return (
-        <div 
-         style={{
-            background: `url(${frost.src}), linear-gradient(168.07deg, #D9D9D9 6.78%, rgba(150, 144, 213, 0.05) 95.61%)`,
-            backdropFilter:" blur(29.4304px)",
-            backgroundSize: 'cover',
-        }}
-        className={`h-[auto] w-1/1 border-[1px]  md:w-[505px] p-[10px] md:p-[30px] rounded-[13px]`}>
-            <div className="rounded-13px md:px-30px h-full bg-custom-color" >
-                <Image src={`/${icon}`} alt="star-icon" height={40} width={136}/>
-                <p className="text-[14px] md:text-[16px] font-[500] leading-[22px]">{content}</p>
-                <p className="text-[14px] mt-[30px] md:text-[16px] font-[500] leading-[22px]">{SubContent}</p>
-
-                <button className={`w-[186px] bg-${btnColor} h-[60px] mt-[56px]   flex text-center justify-center gap-2 rounded-[64px]  text-[#fff] text-[14px] font-[600] leading-[18px] px-[40px] py-[21px] btn-custom-color`} style={{ '--bg-color': btnColor }}>
-                    Learn More
-                   <Image src="/arrow-right.png" alt="arrow-icon" height={10} width={20}/>
-                </button>
-            </div>
-        </div>
-    )
-}
 
 
 

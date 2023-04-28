@@ -32,7 +32,7 @@ const NavItem: React.FC<NavItemsProps> = ({ href, label }) => {
 
 const DesktopNavbar = () => {
   return (
-    <div className="flex justify-between py-[43px] max-w-[1240px] items-center hidden md:flex px-[50px]">
+    <div className="hidden justify-between py-[43px] max-w-[1240px] items-center  md:flex px-[50px]">
       <Link href="/">
       <Image alt="menu" className="inline" src="/tialogo.svg" width={158.6} height={53.95}/>
       </Link>
