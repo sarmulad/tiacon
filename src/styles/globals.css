@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0A0F20;
+  color:#fff;
+  overflow-x: hidden;
+}
+.video-wrapper{
+  width:100%;
+  height:auto;
+}
+.active{
+  background: linear-gradient(109.88deg, #38DBFF 1.73%, #243AFF 107.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.gradient-text{
+  background: linear-gradient(109.88deg, #38DBFF 1.73%, #243AFF 107.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.border-gradient{
+  border-top:1px solid;
+  padding-top:2rem;
+  border-image: linear-gradient(109.88deg, #38DBFF 1.73%, #243AFF 107.46%) 1;
+}
+
+.gradient-button{
+  background: linear-gradient(109.88deg, #38DBFF 1.73%, #243AFF 107.46%);
+}
+
+.gradient-white{
+  background: linear-gradient(169.73deg, #FFFFFF 60.54%, rgba(192, 197, 198, 0) 195.34%);
+}
+.gradient-text-white{
+  background: linear-gradient(169.73deg, #FFFFFF 60.54%, rgba(192, 197, 198, 0) 195.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.features-card:nth-child(2n){
+  margin-top:-50px;
+}
+
+.video-wrapper{
+   position: relative;
+}
+
+
+.bg-custom-color {
+  background-color: var(--bg-color);
+  padding:30px;
+  border-radius:13px;
+}
+
+.btn-custom-color {
+  background-color: var(--bg-color);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+}
+
+.swiper-slide  {
+  display: block;
+  width: 100%;
+}
+
+.gradient {
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-item {
+  display: flex;
+  grid-gap: 30px;
+  animation: cambio 15s infinite linear;
+  animation-delay: 3s;
+  transition: transform 0.5s ease;
+
+}
+
+@keyframes cambio {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+// home page gradient animation
+
+
+.text-animation {
+  background: linear-gradient(45deg, #f3ec78, #af4261, #7b1f80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animateGradient 5s ease infinite;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
