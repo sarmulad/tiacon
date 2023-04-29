@@ -37,20 +37,9 @@ import Link from 'next/link';
 const Footer = () => {
 	return (
 		<div
-			className="bg-[#0A0F20] px-[25px] py-[40px] md:p-[100px] flex flex-col items-center relative"
+			className="bg-[#0A0F20] px-[25px] pt-[40px] md:p-[100px] flex flex-col items-center relative"
 			id="contact"
 		>
-			<div className="absolute bottom-0 left-0 w-full">
-				<div className="mx-5 py-[13px] px-[10px] border-t border-t-[#706F74] flex items-center justify-between">
-					<p className="text-[#706F74] text-sans">
-						© copyright 2022 | All right reserved.
-					</p>
-					<div className="hidden lg:flex items-center space-x-4">
-						<span className="text-[#706F74] text-sans">Powered by</span>
-						<Image src="/polygon.svg" alt="polygon" width={111} height={28} />
-					</div>
-				</div>
-			</div>
 			<div className="flex flex-col md:flex-row justify-between w-full max-w-[1000px] gap-10">
 				<div className="mt-[56px] md:mt-[0px] ">
 					<Image
@@ -98,6 +87,17 @@ const Footer = () => {
 					<Link href="#" className="text-[#706F74] font-medium">
 						Contract
 					</Link>
+				</div>
+			</div>
+			<div className="mt-20 left-0 w-full">
+				<div className="mx-5 py-[13px] px-[10px] border-t border-t-[#706F74] flex items-center justify-between">
+					<p className="text-[#706F74] text-sans">
+						© copyright 2022 | All right reserved.
+					</p>
+					<div className="hidden lg:flex items-center space-x-4">
+						<span className="text-[#706F74] text-sans">Powered by</span>
+						<Image src="/polygon.svg" alt="polygon" width={111} height={28} />
+					</div>
 				</div>
 			</div>
 		</div>
