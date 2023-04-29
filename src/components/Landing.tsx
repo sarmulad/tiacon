@@ -16,7 +16,7 @@ const Landing = ()=>{
             <div className='flex flex-col gap-[32px] md:gap-[0px] md:px-[50px]'>
                 <div className="md:flex justify-between items-center gap-10">
                     <div className="w-1/1 md:w-1/2 flex flex-col flex-1">
-                        <h4 className="font-bold text-[38px] md:text-[60px] leading-[51px] md:leading-[73px]  text-left md:mt-[60px] mb-[32px] md:mb-[0px] ">Be part of a groundbreaking initiative with TIA <br/></h4>
+                        <h4 className="font-bold text-[38px] md:text-[60px] leading-[51px] md:leading-[73px]  text-left md:mt-[60px] mb-[32px] md:mb-[0px] animated-text">Be part of a groundbreaking initiative with TIA <br/></h4>
                         <p className="text-[16px] md:text-[20px] font-medium max-w-[350px] md:w-[80%] text-left  md:my-[30px] leading-[20px] md:leading-[30px]">The first blockchain project to seamlessly integrate social media, cybersecurity,metaverse and crypto exchange.</p>
                         <div className="flex justify-start mt-[32px] gap-7">
                             <Link href="/#">

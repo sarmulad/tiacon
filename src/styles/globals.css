@@ -7,6 +7,11 @@ body {
   color:#fff;
   overflow-x: hidden !important;
 }
+
+html{
+  overflow-x:hidden;
+}
+
 .video-wrapper{
   width:100%;
   height:auto;
@@ -113,7 +118,7 @@ body {
 }
 
 
-// home page gradient animation
+/* // home page gradient animation */
 
 
 .text-animation {
@@ -133,5 +138,48 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+
+/* other styles */
+video.covers {
+  /* override other styles to make responsive */
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  object-fit: fill;
+}
+
+@keyframes text{
+  0% {
+    background-position-x: 0;
+  }
+  50% {
+    background-position-x: 10000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes bounce{
+  0%{}
+  50%{transfrom:translateY(10px);}
+  100%{transform:translateY(-10px);}
+}
+
+.animated-text{
+  -webkit-animation: text 75s linear infinite;
+  animation: text 75s linear infinite;
+  background-image: linear-gradient(to left,#fff,#74b0ff,#fff);
+      -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+
+.revolution-img{
+  animation:bounce 1.2s ease-in-out infinite alternate-reverse;
 }
 
