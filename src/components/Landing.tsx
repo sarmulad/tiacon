@@ -33,7 +33,7 @@ const Landing = ()=>{
                         </div>
 
                     </div>
-                    <div className="flex-1">
+                    <div className=" flex-1">
                       <div className="video">
                         <YouTube videoId={videoId} className="hidden md:flex" />
                       </div>

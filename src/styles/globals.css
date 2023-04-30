@@ -152,6 +152,8 @@ video.covers {
   object-fit: fill;
 }
 
+
+
 @keyframes text{
   0% {
     background-position-x: 0;
@@ -167,7 +169,7 @@ video.covers {
 @keyframes bounce{
   0%{}
   50%{transfrom:translateY(10px);}
-  100%{transform:translateY(-10px);}
+  100%{transform:translateY(-30px);}
 }
 
 .animated-text{
